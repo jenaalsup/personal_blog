@@ -1,0 +1,52 @@
+@import 'bootstrap/dist/css/bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+.navbar {
+  background-color: #fff !important;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 1.5em;
+}
+
+#logo {
+  float:left; 
+  font-size: 2em;
+  color: #000;
+  text-transform: lowercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#home-container {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.jumbotron {
+  background-image: asset-url('jumbo.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin-top: 30px;
+
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Prata', 'Karma' !important;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: #fff;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  font-size: 1em;
+}
