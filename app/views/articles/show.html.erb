@@ -7,6 +7,9 @@
           <div class="card-body">
             <h1 class="card-title"><%= @article.title %></h1>
             <h6 class="card-date font-italic"><%= @article.created_at.strftime("%B %d, %Y") %></h6>
+            <% if @article.categories.any? %>
+              <%= render @article.categories %>
+            <% end %>
             <hr>
             <% @article.description.split('new_line').each do |line| %>
               <p class="card-full-text text-left"><%= line %></p>

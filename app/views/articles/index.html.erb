@@ -8,6 +8,10 @@
           <div class="card text-center shadow mb-5 bg-white rounded">
             <div class="card-header">
               <%= article.title %>
+              <br>
+              <% if article.categories.any? %>
+                <%= render article.categories %>
+              <% end %>
             </div>
             <div class="card-body">
               <p class="card-text"><%= truncate(article.description, length: 100).gsub("new_line", "") %></p>
