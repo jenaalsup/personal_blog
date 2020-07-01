@@ -1,21 +1,31 @@
-<h1>Articles Listing Page</h1>
+<div id="page-content">
+  <h1 class="text-center mt-2">All blog posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.title %></td>
-        <td><%= article.description %></td>
-        <td><%= link_to 'View', article_path(article) %></td>
-      </tr>
+  <div id="blog-posts" class="container">
+    <% @articles.reverse.each do |article| %>
+      <div class="row justify-content-md-center">
+        <div class="col-12 mt-3">
+          <div class="card text-center shadow mb-5 bg-white rounded">
+            <div class="card-header">
+              <%= article.title %>
+            </div>
+            <div class="card-body">
+              <p class="card-text"><%= truncate(article.description, length: 100) %>...</p>
+              <%= link_to "Read more", article_path(article), class: "btn btn-outline-secondary" %>
+            </div>
+            <div class="card-footer text-muted font-italic">
+              <small><%= article.created_at.strftime("%B %d, %Y") %></small>
+            </div>
+          </div>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+
+</div>
+
+<footer id="sticky-footer" class="py-4 bg-white text-black">
+  <div class="container text-center">
+    <small>Copyright &copy; 2020 Plant Based Teen</small>
+  </div>
+</footer>

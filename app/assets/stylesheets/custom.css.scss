@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 .navbar {
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 .nav-link {
@@ -51,12 +51,12 @@
 html,
 body {
   height: 100%;
-  font-family: 'Prata', 'Karma' !important;
+  font-family: 'Prata', 'Karma';
 }
 
 #page-content {
   flex: 1 0 auto;
-  background-color: #fff;
+  background-color:#f0f0f0;
 }
 
 #sticky-footer {
@@ -75,3 +75,33 @@ body {
   width: 800px;
   font-size: 1.5em;
 }
+
+#blog-posts {
+  width: 1000px;
+}
+
+.card-title {
+  margin-top: 20px;
+}
+
+.card-footer {
+  font-size: 0.8em;
+}
+
+.card-text {
+  font-size: 0.8em;
+}
+
+.card-full-text {
+  font-size: 0.9em;
+  font-family: 'Arial', 'Karma';
+  line-height: 35px;
+  margin-top: 15px;
+}
+
+.card-date {
+  margin-top: -7px;
+  color:#707070;
+  margin-bottom: 35px;
+}
+
