@@ -1,2 +1,35 @@
+<div id="page-content">
+  <h1 class="text-center mt-2"><%= @category.name %></h1>
 
-<h1 class="text-center mt-2"><%= @category.name %></h1>
+  <div id="blog-posts" class="container">
+    <% @articles.reverse.each do |article| %>
+      <div class="row justify-content-md-center">
+        <div class="col-12 mt-3">
+          <div class="card text-center shadow mb-5 bg-white rounded">
+            <div class="card-header">
+              <%= article.title %>
+              <br>
+              <% if article.categories.any? %>
+                <%= render article.categories %>
+              <% end %>
+            </div>
+            <div class="card-body">
+              <p class="card-text"><%= truncate(article.description, length: 100).gsub("new_line", "") %></p>
+              <%= link_to "Read more", article_path(article), class: "btn btn-outline-secondary" %>
+            </div>
+            <div class="card-footer text-muted font-italic">
+              <small><%= article.created_at.strftime("%B %d, %Y") %></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
+
+<footer id="sticky-footer" class="py-4 bg-white text-black">
+  <div class="container text-center">
+    <small>Copyright &copy; 2020 Plant Based Teen</small>
+  </div>
+</footer>
