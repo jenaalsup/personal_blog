@@ -10,7 +10,7 @@
               <%= article.title %>
             </div>
             <div class="card-body">
-              <p class="card-text"><%= truncate(article.description, length: 100) %>...</p>
+              <p class="card-text"><%= truncate(article.description, length: 100).gsub("new_line", "") %></p>
               <%= link_to "Read more", article_path(article), class: "btn btn-outline-secondary" %>
             </div>
             <div class="card-footer text-muted font-italic">
