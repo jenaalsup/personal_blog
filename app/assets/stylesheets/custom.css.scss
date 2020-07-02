@@ -43,6 +43,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-left: calc(1px + 20vmax);
+  padding-right: calc(1px + 20vmax);
   width: 50vmax;
 }
 
@@ -76,7 +78,7 @@ body {
 
 #contactme {
   margin-bottom: 100px;
-  padding-left: calc(105px + 2vmin);
+  padding-left: calc(100px + 2vmin);
   padding-right: calc(100px + 2vmin);
   width: calc(200px + 50vmax);
   font-size: 1.3em;
