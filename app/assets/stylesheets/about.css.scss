@@ -1,0 +1,28 @@
+.img-about {
+  background-image: asset-url('about.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 600px;
+  padding-left: calc(100px + 20vmax);
+  padding-right: calc(100px + 20vmax);
+  margin-left: calc(100px + 20vmax);
+  margin-right: calc(100px + 20vmax);
+}
+
+#about-card-parent {
+  padding-left: calc(25px + 2vmax);
+  padding-right: calc(25px + 2vmax);
+  width: 3000px;
+  margin: auto;
+}
+
+#about-container {
+  font-size: 0.8em;
+  width: 3000px;
+}
+
+#about-sub-header {
+  font-family: 'Volkron', serif;
+  font-size: 1.5em;
+}

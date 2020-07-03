@@ -1,51 +1,10 @@
 @import 'bootstrap/dist/css/bootstrap';
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import 'navigation.css.scss', 'home.css.scss', 'about.css.scss', 'contact.css.scss';
 
 #page-content {
   flex: 1 0 auto;
   background-color:#f0f0f0;
-}
-
-.navbar {
-  background-color: #fff;
-}
-
-.nav-link {
-  color: #000;
-  font-size: 1.5em;
-}
-
-#logo {
-  float:left; 
-  font-size: 2em;
-  color: #000;
-  text-transform: lowercase;
-  letter-spacing: -1px;
-  font-weight: bold;
-}
-
-.jumbotron {
-  background-image: asset-url('jumbo.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(375px + 10vmin);
-  margin-top: auto;
-  margin-bottom: auto
-}
-
-.img-about {
-  background-image: asset-url('about.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: calc(1px + 20vmax);
-  padding-right: calc(1px + 20vmax);
-  width: 50vmax;
 }
 
 .container {
@@ -54,6 +13,17 @@
   padding-right: 100px;
   width: 800px;
   font-size: 1.5em;
+}
+
+h1, h2, h4, h5, h6 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+h1 {
+  font-size: calc(50px + 2vh + 1vw);
 }
 
 .btn-light {
@@ -70,18 +40,6 @@ body {
 #sticky-footer {
   flex-shrink: none;
   font-size: 1em;
-}
-
-#get-in-touch {
-  margin-top: 100px;
-}
-
-#contactme {
-  margin-bottom: 100px;
-  padding-left: calc(100px + 2vmin);
-  padding-right: calc(100px + 2vmin);
-  width: calc(200px + 50vmax);
-  font-size: 1.3em;
 }
 
 #blog-posts {
@@ -119,23 +77,6 @@ body {
   margin-bottom: 20px;
 }
 
-#about-sub-header {
-  font-family: 'Volkron', serif;
-  font-size: 1.5em;
-}
-
 .short-hr {
   background-color:#787878;
-}
-
-#about-card-parent {
-  padding-left: calc(25px + 2vmax);
-  padding-right: calc(25px + 2vmax);
-  width: 3000px;
-  margin: auto;
-}
-
-#about-container {
-  font-size: 0.8em;
-  width: 3000px;
 }

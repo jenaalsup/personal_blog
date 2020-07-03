@@ -1,0 +1,15 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.jumbotron {
+  width: 100%;
+  background-image: asset-url('jumbo.jpg');
+  height: calc(410px + 2vh + 1vw);
+}
+
+.btn-light {
+  width: 100px;
+}
