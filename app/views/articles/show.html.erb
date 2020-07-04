@@ -5,7 +5,7 @@
       <div class="col-12 mt-5">
         <div class="card text-center shadow mb-5 bg-white rounded">
           <div class="card-body">
-            <h1 class="card-title"><%= @article.title %></h1>
+            <h2 class="card-title"><%= @article.title %></h2>
             <h6 class="card-date font-italic"><%= @article.created_at.strftime("%B %d, %Y") %></h6>
             <% if @article.categories.any? %>
               <%= render @article.categories %>
