@@ -1,13 +1,22 @@
 .box {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+  height: 70vh;
 }
 
 .jumbotron {
-  width: 100%;
   background-image: asset-url('jumbo.jpg');
-  height: calc(410px + 2vh + 1vw);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(400px + 2vh + 1vw);
+  height: 100vh;
+  width: 100vw;
+}
+
+#home-text {
+  margin-top: 25vh;
 }
 
 .btn-light {

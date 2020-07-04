@@ -4,10 +4,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 600px;
-  padding-left: calc(100px + 20vmax);
-  padding-right: calc(100px + 20vmax);
-  margin-left: calc(100px + 20vmax);
-  margin-right: calc(100px + 20vmax);
 }
 
 #about-card-parent {
@@ -17,9 +13,14 @@
   margin: auto;
 }
 
+#about-card {
+  align-items: center;
+}
+
 #about-container {
   font-size: 0.8em;
   width: 3000px;
+  padding-right: 15vw;
 }
 
 #about-sub-header {

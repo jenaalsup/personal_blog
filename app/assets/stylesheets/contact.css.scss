@@ -1,11 +1,18 @@
+#contact-card-parent {
+  width: 80vw;
+  margin: auto;
+}
+
+#contact-card {
+  margin: auto;
+  width: 80vw;
+  align-items: center;
+}
+
 #get-in-touch {
   margin-top: 100px;
 }
 
 #contactme {
-  margin-bottom: 100px;
-  padding-left: calc(100px + 2vmin);
-  padding-right: calc(100px + 2vmin);
-  width: calc(200px + 50vmax);
-  font-size: 1.3em;
+  margin-top: 100px;
 }
