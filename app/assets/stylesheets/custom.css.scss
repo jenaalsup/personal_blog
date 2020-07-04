@@ -26,57 +26,13 @@ h1 {
   font-size: calc(50px + 2vh + 1vw);
 }
 
-.btn-light {
-  width: 150px;
-}
-
 html,
 body {
   height: 100%;
   font-family: 'Prata', 'Karma';
 }
 
-
 #sticky-footer {
   flex-shrink: none;
   font-size: 1em;
-}
-
-#blog-posts {
-  width: 1000px;
-}
-
-.card-title {
-  margin-top: 20px;
-}
-
-.card-footer {
-  font-size: 0.8em;
-}
-
-#tag-cards {
-  margin-right: 250px;
-  margin-left: 250px;
-
-}
-
-.card-text {
-  font-size: 0.8em;
-}
-
-.card-full-text {
-  font-size: 0.9em;
-  font-family: 'Arial', 'Karma';
-  line-height: 35px;
-  margin-top: 15px;
-}
-
-.card-date {
-  margin-top: -7px;
-  color:#707070;
-  margin-bottom: 20px;
-}
-
-.short-hr {
-  background-color:#787878;
 }
