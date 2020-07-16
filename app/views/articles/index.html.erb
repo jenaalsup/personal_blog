@@ -1,5 +1,5 @@
 <div id="page-content">
-  <h2 class="text-center mt-2 mb-1">All blog posts</h1>
+  <h2 class="text-center mt-2 mb-1">All Blog Posts</h1>
   <%= link_to "Tags", categories_path, class: "btn btn-light mx-auto d-block" %>
   <hr class="short-hr mt-4" style="width:120px; margin: auto;">
 
@@ -16,7 +16,7 @@
               <% end %>
             </div>
             <div class="card-body">
-              <p class="card-text"><%= truncate(article.description, length: 100).gsub("new_line", "") %></p>
+              <p class="card-text"><%= truncate(article.description, length: 96).gsub("new_line", "") %></p>
               <%= link_to "Read more", article_path(article), class: "btn btn-outline-secondary" %>
             </div>
             <div class="card-footer text-muted font-italic">
