@@ -11,6 +11,17 @@
   font-size: 0.8em;
 }
 
+#blog-posts {
+  padding-left: calc(20px + 2vmax);
+  padding-right: calc(20px + 2vmax);
+  width: 3000px;
+  margin: auto;
+}
+
+#articles-show-card {
+  align-items: center;
+}
+
 #tag-cards {
   margin-right: 250px;
   margin-left: 250px;
