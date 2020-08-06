@@ -12,7 +12,11 @@
             <% end %>
             <hr>
             <% @article.description.split('new_line').each do |line| %>
-              <p class="card-full-text text-left"><%= line %></p>
+              <% if line.include?('BOLD') %>
+                <p class="card-full-text text-left"><strong><%= line.sub('BOLD ', '') %></p></strong>
+              <% else %>
+                <p class="card-full-text text-left"><%= line %></p>
+              <% end %>
               <p>
 
               </p>
