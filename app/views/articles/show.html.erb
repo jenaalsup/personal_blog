@@ -14,6 +14,10 @@
             <% @article.description.split('new_line').each do |line| %>
               <% if line.include?('BOLD') %>
                 <p class="card-full-text text-left"><strong><%= line.sub('BOLD ', '') %></p></strong>
+              <% elsif line.include?('BULLET-POINT') %>
+                <ul>  
+                  <li><p class="card-full-text text-left"><%= line.sub('BULLET-POINT ', '') %></p></li>
+                </ul>
               <% else %>
                 <p class="card-full-text text-left"><%= line %></p>
               <% end %>
