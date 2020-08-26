@@ -4,7 +4,7 @@
   <hr class="short-hr mt-4" style="width:120px; margin: auto;">
 
   <div id="blog-posts" class="container">
-    <% @articles.sort_by { |obj| obj.id } %>
+    <% @articles.sort %>
     <% @articles.reverse.each do |article| %>
       <div class="row justify-content-md-center">
         <div class="col-12 mt-3">
