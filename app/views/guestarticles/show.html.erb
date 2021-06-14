@@ -6,7 +6,7 @@
         <div id="articles-show-card" class="card text-center shadow mb-5 bg-white rounded">
           <div class="card-body">
             <h2 class="card-title"><%= @guestarticle.title %></h2>
-            <h6 class="card-date font-italic"><%= @guestarticle.created_at.strftime("%B %d, %Y") %></h6>
+            <h5 class="card-date font-italic"><%= @guestarticle.author %> · <%= @guestarticle.created_at.strftime("%B %d, %Y") %></h5>
             <hr>
             <% @guestarticle.description.split('new_line').each do |line| %>
               <% if line.include?('BOLD') %>

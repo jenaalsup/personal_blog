@@ -1,0 +1,31 @@
+<div id="page-content">
+  <h2 class="text-center mt-2 mb-2">Guest Writing</h1>
+  <hr class="short-hr mt-4 mb-1" style="width:120px; margin: auto;">
+
+
+  <div id="blog-posts" class="container">
+    <% @guestarticles = @guestarticles.sort %>
+    <% @guestarticles.reverse.each do |guestarticle| %>
+      <div class="row justify-content-md-center">
+        <div class="col-12 mt-3">
+          <div class="card text-center shadow mb-5 bg-white rounded">
+            <div class="card-header">
+              <%= guestarticle.title %>
+              <h5 class="card-subtitle mt-1 mb-2 text-muted font-italic">
+                By <%= guestarticle.author %>
+              </h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text"><%= truncate(guestarticle.description, length: 96).gsub("new_line", "") %></p>
+              <%= link_to "Read more", guestarticle_path(guestarticle), class: "btn btn-outline-secondary" %>
+            </div>
+            <div class="card-footer text-muted font-italic">
+              <small><%= guestarticle.created_at.strftime("%B %d, %Y") %></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
