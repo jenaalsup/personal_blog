@@ -1,0 +1,3 @@
+class Guestarticle < ApplicationRecord
+
+end
